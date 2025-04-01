@@ -1,87 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Samaneh Mohammadi</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="preload" as="image" href="assets/misc/overview_sg.gif">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <meta name="theme-color" content="#1a4067" />
-  <!-- SEO -->
-  <meta property="og:title" content="Samaneh Mohammadi" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="Distibuate Machine Learning Researcher" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="" />
-  <meta property="og:site_name" content="" />
-  <meta name="twitter:image" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samaneh Mohammadi | Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Samaneh Mohammadi</h1>
+      <p>PhD Candidate in Computer Science</p>
+      <p>RISE Research Institute of Sweden & Mälardalen University</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<body onload="showPageCallback()">
-	<script src="lib/jquery-1.12.4.min.js"></script>
-	<!--<script src="lib/mobile-detect.min.js"></script>-->
-	<script src="lib/template.v1.js"></script>
-	<script src="lib/scramble.js"></script>
-	<div id="main_body" style="display:none;">
-	<dt-article id="dtbody">
-	<dt-byline class="l-page transparent"></dt-byline>
-	<h1>Samaneh Mohammadi</h1>
-	<h2>Industial PhD Student @ <a href="https://www.ri.se" target="_blank">RISE Rsearch Institutes of Sweden</a> <br>
-	  Federated Learning, Privacy and Security, On-device ML
-	</h2>
-	<dt-byline class="l-page" id="authors_section">
-	<div class="byline">
-	  <div>
-		<p>I'm a Industial PhD student at <a class="link-colored" href="">RISE Rsearch Institutes of Sweden</a>. My research interests span <span class="link-colored">Distibauted Machine Learning</span>, <span class="link-colored">Federated Learning</span>, <span class="link-colored">Privacy and Security</span>, <span class="link-colored">On-device ML</span>, and applications to train federated models with <span class="link-colored">minimal human supervision</span>.
-		</p>
-	  </div>
-	  <div class="authors">
-		<div class="author">
-			<a class="project-link" href="https://scholar.google.com/citations?user=hVsI_-4AAAAJ&hl=en" target="_blank">Scholar</a>
-		</div>
-		<div class="author">
-			<a class="project-link" href="https://github.com/SamaneMohammadi" target="_blank">GitHub</a>
-		</div>
-		<div class="author">
-			<a class="project-link" href="https://www.linkedin.com/in/samaneh-mohammadi-22879b159/" target="_blank">LinkedIn</a>
-		</div>
-		<div class="author">
-		<a class="project-link">Email:</a><font id="email" style="display:inline;">.samaneh.mohammadi@ri.se<a href="#" onclick="emailScramble.initAnimatedBubbleSort();return false;">unscramble</a></font>
-		<script>
-			emailScramble = new scrambledString(document.getElementById('email'),
-			'emailScramble', '.samaneh.mohammadi@ri.se',
-			[1, 6, 7, 3, 4, 5, 2, 14, 12, 8, 0, 11, 13, 16, 9, 10, 15, 17]);
-			</script>
-		</div>
-	  </div>
-	</div>
-	</dt-byline>
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m an industrial PhD candidate with over five years of experience in AI and privacy-preserving machine learning. I focus on scalable, secure, and high-performing ML models for real-world distributed systems.</p>
+    </section>
 
-	<table valign="top">
+    <section id="research" class="section alt">
+      <h2>Research Interests</h2>
+      <div class="tags">
+        <span>Federated Learning</span>
+        <span>Differential Privacy</span>
+        <span>Edge AI</span>
+        <span>Homomorphic Encryption</span>
+      </div>
 
+      <h3>Selected Publications</h3>
+      <ul class="publication-list">
+        <li><strong>EncCluster:</strong> Functional Encryption in FL (PMC Journal, 2025)</li>
+        <li><strong>Privacy vs Performance:</strong> JPDC, 2024</li>
+        <li><strong>Homomorphic Encryption in FL:</strong> ISPEC 2023</li>
+        <li><strong>Best Paper:</strong> Speech Emotion Recognition with FL (FedCSIS 2023)</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="section">
+      <h2>CV Snapshot</h2>
+      <p><strong>Education:</strong> PhD & Licentiate from Mälardalen University, MSc from Tehran University</p>
+      <p><strong>Experience:</strong> RISE, University of Tehran, Openinside Co.</p>
+      <p><strong>Honors:</strong> FedCSIS Intl. Cooperation Award 2023</p>
+      <a class="button" href="CV_Samaneh_M.pdf" download>Download Full CV</a>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:Samaneh.mohammadi@ri.se">Samaneh.mohammadi@ri.se</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samaneh-mohammadi-22879b159/" target="_blank">samaneh-mohammadi</a></p>
+      <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hVsI_-4AAAAJ" target="_blank">Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Samaneh Mohammadi</p>
+  </footer>
 </body>
-
-<script>
-	var block_fn;
-	function showPageCallback(){
-	  block_fn = setTimeout(showPage, 300);
-	}
-	function showPage() {
-	  document.getElementById("main_body").style.display = "block";
-	}
-</script>
-
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-79826043-1', 'auto');
-	ga('send', 'pageview');
-</script>
+</html>
