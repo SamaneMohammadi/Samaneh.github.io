@@ -112,7 +112,8 @@ nav a:hover {
 }
  */
 /* Section styling */
-.section {
+
+/* .section {
   padding: 80px 30px;
   max-width: 1000px;
   margin: 0 auto;
@@ -125,7 +126,22 @@ nav a:hover {
 
 .section.alt {
   background-color: rgba(30, 41, 59, 0.85);
+} */
+
+.section {
+  background: #ffffff;
+  color: #1e293b;
+  padding: 60px 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 }
+
+.section.alt {
+  background: #f9fafb;
+}
+
 
 .section h2 {
   font-size: 2rem;
