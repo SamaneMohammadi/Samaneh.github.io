@@ -1,143 +1,135 @@
-body {
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-.cover {
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Header */
+.hero {
   position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
+  background: linear-gradient(120deg, #1f2937, #3b82f6);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
   overflow: hidden;
 }
 
-.cover video {
+.hero .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  filter: brightness(85%);
-  z-index: -1;
-}
-
-.cover h1 {
-  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  text-align: center;
-  top: 40%;
-  margin: 0;
-  font-size: 4em;
-  line-height: 1.2em;
-  font-family: 'Roboto', sans-serif;
+  background: rgba(31, 41, 55, 0.6);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #93c5fd;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.section.alt {
+  background-color: #e5e7eb;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+/* Tags */
+.tags {
+  margin: 1rem 0;
+}
+
+.tags span {
+  display: inline-block;
+  background: #3b82f6;
   color: #fff;
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  margin: 0.3em;
+  font-size: 0.9em;
 }
 
-.cover .hint {
-  position: absolute;
-  bottom: 2.5em;
-  /* right: 3em; */
-  left: 50%;
-  font-size: 1.0em;
-  font-family: 'Roboto', sans-serif;
+/* Publications */
+.publication-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.publication-list li {
+  margin-bottom: 0.7rem;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background: #1f2937;
   color: #fff;
-  -ms-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  padding: 0.6em 1.4em;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin-top: 1rem;
 }
 
-.cover div:after {
-  content: '';
-  position: absolute;
-  left: 2.1em;
-  top: 1.2em;
-  border: 1px solid #fff;
-  border-style: none solid solid none;
-  width: 1em;
-  height: 1em;
-  -ms-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+.button:hover {
+  background: #374151;
 }
 
-.figure {
+/* Footer */
+footer {
   text-align: center;
-}
-
-.figure > * {
-  margin: auto;
-}
-
-.figure > video {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-figcaption {
-  padding: 0.5em;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 13px;
-  line-height: 1.5em;
-  text-align: left;
-}
-
-dt-article figcaption a {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-dt-article figcaption b {
-  font-weight: 600;
-  color: rgba(0, 0, 0, 1.0);
-}
-
-.transparent {
-  opacity: 0;
-}
-
-.unselectable {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-.svgunselectable {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    background: none;
-}
-
-.link-colored{
-    color: rgb(5 101 197 / 70%);
+  padding: 2rem;
+  background: #1f2937;
+  color: #fff;
+  margin-top: 3rem;
 }
