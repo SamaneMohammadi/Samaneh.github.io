@@ -6,10 +6,22 @@
   <title>Samaneh Mohammadi | Academic Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #0f172a;
+    }
+  </style>
 </head>
 <body>
+  <div id="particles-js"></div>
   <header class="hero">
-    <div class="overlay"></div>
     <div class="hero-content">
       <h1>Samaneh Mohammadi</h1>
       <p>PhD Candidate in Computer Science</p>
@@ -68,5 +80,37 @@
   <footer>
     <p>&copy; 2025 Samaneh Mohammadi</p>
   </footer>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 70 },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.4 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#60a5fa',
+          opacity: 0.5,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick: { enable: true, mode: 'push' }
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 0.8 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>
